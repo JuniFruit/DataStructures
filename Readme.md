@@ -14,10 +14,15 @@ This project is a small demonstration of different data structures. It visiually
 # How to use
 
 1. Go to the [web-site](#data-structures)
-2. Choose data structure you want to work with ![image](https://user-images.githubusercontent.com/81621439/193826999-df69ffcb-89e8-439e-a4c4-ca3a6bd7cf2b.png)
-3. Enter the size of the data structure (max is 10) and hit create <img src="https://prnt.sc/A6gt8W9XCpzd" />
-4. After that you can choose an operation that you want to perform with your data structure <img src="https://prnt.sc/3dw5dIpOZZ_D" /> 
-5. Perform an operation and see the result
+2. Choose data structure you want to work with 
+![image](https://user-images.githubusercontent.com/81621439/193826999-df69ffcb-89e8-439e-a4c4-ca3a6bd7cf2b.png)
+4. Enter the size of the data structure (max is 10) and hit create
+![image](https://user-images.githubusercontent.com/81621439/193827164-efaa332c-8f0a-4e60-a881-e8415754c63b.png)
+
+6. After that you can choose an operation that you want to perform with your data structure
+![image](https://user-images.githubusercontent.com/81621439/193827240-545f30b5-b2a2-419f-bb80-aa0e92bb0bca.png)
+
+8. Perform an operation and see the result
 
 # Tests
 
