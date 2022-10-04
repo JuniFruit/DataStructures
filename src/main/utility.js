@@ -16,34 +16,15 @@ export const handleError = (msg) => {
 }
 
 
-export const setPointers = (dataType) => {
-
-    const pointers = document.querySelectorAll('.pointer');
-  
-    const rotatePointers = (deg) => {
-
-        pointers.forEach(pointer => pointer.style.transform = `rotate(${deg}deg)`);
-
-    }
-
-    switch(dataType) {
-        case 'Linked List': 
-            rotatePointers(0);
-            break;
-        case 'Queue':
-            rotatePointers(0);
-            break;
-        case 'Stack':
-            rotatePointers(90);    
-    }
-}
-
 export const highlightNode = (target) => {
-    canvas.childNodes.forEach(node => {
-     
-        if (node.firstChild?.innerText === target.value.toString()) {
-            node.style.backgroundColor = 'var(--secondary)';
-            return;
+   
+    const children = canvas.childNodes;
+
+    for (let i=0;i<children.length;i++) {
+        if (children[i].firstChild?.innerText === target.value.toString()) {
+            children[i].style.backgroundColor = 'var(--secondary)';
+            break
         }
-    })
+    }
+    return;
 }

@@ -143,12 +143,12 @@ const LLOpeartionsInputs = (e) => {
             createInputIndex();
             break;
         case 'LL_search':
-            createOperationDescription('Returns a node with the given value');
+            createOperationDescription('Returns a node with the given value. (First to find)');
 
             createInputData();
             break;
         case 'LL_searchByIndex':
-            createOperationDescription('Returns a node with the given index');
+            createOperationDescription('Returns a node with the given index.');
 
             createInputIndex();
             break;

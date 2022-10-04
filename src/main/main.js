@@ -4,7 +4,7 @@ import { Stack } from '../Stack/Stack.js';
 import { HashMap } from '../HashMap/HashMap.js';
 import { createOperations } from './createOperations.js';
 import { handleError, highlightNode, removeAllChildNodes } from './utility.js';
-import { setPointers } from './utility.js';
+
 import { MinHeap } from '../Heap/MinHeap.js';
 
 const createBtn = document.getElementById('create-button');
@@ -359,8 +359,7 @@ const handleCreate = () => {
         case 'Linked List':
             LINKED_LIST = new LinkedList().createList(size)
             createVisualLinkedList(LINKED_LIST)
-            createOperations(typeStructures);
-            setPointers(typeStructures);
+            createOperations(typeStructures);           
             canvas.style.flexDirection = 'row'
             break;
         case 'Queue':
@@ -369,8 +368,6 @@ const handleCreate = () => {
             QUEUE.size = size;
             createVisualLinkedList(QUEUE.queue);
             createOperations(typeStructures);
-            setPointers(typeStructures);
-
             canvas.style.flexDirection = 'row'
             break;
         case 'Stack':
