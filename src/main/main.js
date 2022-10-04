@@ -182,7 +182,7 @@ export const stackOperations = () => {
             break;
         case 'S_peek':
             const peeked = STACK.peek();
-            createVisualStack(STACK);
+            createVisualStack(STACK.stack);
             highlightNode(peeked)
 
             break;

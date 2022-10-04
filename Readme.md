@@ -13,7 +13,7 @@ This project is a small demonstration of different data structures. It visiually
 
 # How to use
 
-1. Go to the [web-site](#data-structures)
+1. Go to the [web-site](https://junifruit.github.io/)
 2. Choose data structure you want to work with <br>
 ![image](https://user-images.githubusercontent.com/81621439/193826999-df69ffcb-89e8-439e-a4c4-ca3a6bd7cf2b.png)
 4. Enter the size of the data structure (max is 10) and hit create <br>
