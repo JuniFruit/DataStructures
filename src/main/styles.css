@@ -1,0 +1,311 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+
+*,*::after,*::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --mainColor: #3aafa9;
+    --secondary: #2b7a78;
+    --thirdColor: #17252a;
+    --fourthColor: #def2f1;
+    --fifthColor: #feffff;
+}
+
+body {
+    background-color: var(--mainColor);
+    font-family: 'Roboto Slab', serif;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+/* Page container */
+
+a:hover {
+    color: var(--fourthColor);
+}
+
+.page {
+    
+    max-width: 67rem;
+    margin: 5rem auto;
+    display: flex;
+    gap: 1rem;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1,h2, h3, h4 {
+    color: var(--fifthColor);
+}
+
+
+/* Canvas */
+
+.canvas {
+    width: 80%;
+    min-height: 10rem;
+    overflow: hidden;
+    background-color: var(--fifthColor);
+    border-radius: .5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;   
+    flex-wrap: wrap;  
+   
+}
+
+.canvas > h3 {
+    color: var(--thirdColor);
+}
+
+
+/* Node element */
+
+.node {
+    border: 2px solid var(--mainColor);
+    min-width: 2.5rem;
+    min-height: 2.5rem;
+    border-radius: 50%;
+    margin: .2rem;
+    padding: .3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: slidein .5s ease-in; 
+}
+
+
+.node > p {
+    color: var(--thirdColor);
+}
+
+.pointer {
+    font-weight: 500;
+  
+    color: rgba(0, 0, 0, 0.334);
+    margin: .3rem;
+    transition: all .15s ease-in-out;
+    animation: slidein .5s ease-in; 
+    
+
+}
+
+/* Buttons */
+
+button {
+    outline: none;
+    background-color: var(--thirdColor);
+    padding: .5rem 1.5rem;
+    color: var(--fifthColor);
+    cursor: pointer;
+    font-weight: 600;
+    border-radius: 1rem;
+    border: none;
+}
+
+button:hover {
+    color: var(--secondary);
+}
+
+/* Inputs */
+
+input {
+    outline: none;
+    appearance: none;
+    border: none;
+    min-width: 5rem;    
+    background-color: white;
+    border-radius: .5rem;
+    padding: .5rem .3rem;
+    margin: .5rem .5rem;
+    max-height: 2rem;
+}
+
+input:focus {
+   box-shadow: 1px 1px 5px var(--secondary), -1px -1px 5px var(--secondary);
+}
+
+select {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+    background: transparent;
+    background-color: white;
+    min-width: 5rem;
+    border-radius: .5rem;
+    padding: .5rem .3rem;
+    max-height: 3rem;
+    outline: none;
+}
+
+
+/* Input-container */
+
+.inputs-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.operations {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+.operations > select {
+    animation: slidein .5s ease-in-out;
+}
+
+.data-structure-selection {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: .5rem;
+}
+
+.function-inputs {
+    animation: slidein .5s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.function-inputs > p {
+    color: white;
+    font-weight: 500;
+    font-size: 1rem;
+    margin: .5rem 0;
+
+}
+
+.function-inputs > input {
+    animation: scaleup .15s ease-in-out;
+    
+}
+
+.operation-result {
+    color: white;
+    font-weight: 500;   
+    margin: .5rem 0;
+    animation: scaleup .15s ease-in-out;
+}
+
+
+/* Stack Node */
+
+.stack,
+.bucket {
+    min-width: 4rem;
+    min-height: 2rem;
+    border: 3px solid var(--mainColor);
+    margin: .3rem;
+    padding: .3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: slidein .5s ease-in; 
+}
+
+/* HashMap */
+
+.bucket-container {
+    display: flex;
+    
+}
+
+.linkedList-container {
+    display: flex;
+    align-items: center;
+}
+.linkedList-container> .node {
+    border-radius: 0%;
+    min-width: 4rem;
+    min-height: 2rem;
+    border: 3px solid var(--mainColor);
+    background-color: var(--fourthColor);
+
+}
+
+/* Heap-tree */
+
+.treeNode-container {
+    display: grid;
+    position: relative;
+    grid-template-columns: 1fr min-content 1fr;
+    row-gap: .5rem;
+   
+    grid-template-rows: repeat(3, max-content);    
+
+}
+
+
+.treeNode-container .node {
+    grid-row: 1;
+    grid-column: 2;
+    
+    justify-self: center;
+}
+
+.treePointerLeft {
+    grid-row: 2;
+    grid-column: 1;
+    transform: rotate(130deg);
+    align-self: center;
+    justify-self: flex-end;
+}
+
+.treePointerRight {
+    grid-row: 2;
+    grid-column: 3;
+    transform: rotate(50deg);
+    align-self: center;
+    justify-self: flex-start;
+}
+.treeNode-container:nth-child(4) {
+    grid-row: 3;
+    grid-column: 1;
+}
+.treeNode-container:last-child {
+    grid-row: 3;
+    grid-column: 3;
+}
+
+
+
+
+@keyframes scaleup {
+    from{
+        transform: scale(0);
+    }
+
+    to {
+        transform: scale(1);
+    }
+    
+}
+
+@keyframes slidein {
+    from {
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+
+    to{
+        opacity: 1;
+        transform: translateX(0rem);
+    }
+    
+    
+}

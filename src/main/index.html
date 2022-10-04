@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Structures</title>
+    <script defer src="main.js" type="module"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <nav>
+        <a href="#">Back to portfolio</a>
+    </nav>
+    <section class="page">
+        <h1>DATA STRUCTURES</h1>
+        <div class="canvas" id="canvas">
+
+        </div>
+        <div class="inputs-container">
+            <div class="inputs-wrapper">
+                <div class="data-structure-selection">
+                    <select name="structures" id="structures">
+                        <option value="Linked List">Linked List</option>
+                        <option value="Queue">Queue</option>
+                        <option value="Stack">Stack</option>
+                        <option value="HashMap">HashMap</option>
+                        <option value="Heap">Heap</option>
+                    </select>
+                    <input type="number" aria-valuemax="10" min="0" max="10" class="input-size" id="input-size" placeholder="Size"></input>
+                </div>
+
+                <div class="operations" id="operations"></div>
+
+            </div>
+            <button class="create-button" id="create-button">Create</button>
+        </div>
+    </section>
+</body>
+
+</html>
